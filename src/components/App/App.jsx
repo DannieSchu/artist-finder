@@ -1,6 +1,13 @@
 import React from 'react';
+import Controls from '../Controls/Controls.jsx';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Controls
+      onSubmit={() => { }}
+      onChange={() => { }}
+      value=""
+      placeholder="Enter an artist"
+      buttonText="Go!" />
+  );
 }
-  
