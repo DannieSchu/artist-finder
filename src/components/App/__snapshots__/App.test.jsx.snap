@@ -1,11 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `
-<Controls
-  buttonText="Go!"
-  onChange={[Function]}
-  onSubmit={[Function]}
-  placeholder="Enter an artist"
-  value=""
-/>
-`;
+exports[`App component renders App 1`] = `<ArtistFinder />`;
