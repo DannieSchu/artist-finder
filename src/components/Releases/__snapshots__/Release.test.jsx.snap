@@ -20,7 +20,7 @@ exports[`Release matches a snapshot 1`] = `
   </tr>
   <image
     alt=""
-    src="music-icon.svg"
+    src="/music-icon.svg"
   />
 </table>
 `;

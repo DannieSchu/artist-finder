@@ -6,7 +6,7 @@ import styles from './Artists.css';
 
 const Artists = ({ artists, loading }) => {
   const artistElements = artists.map(artist => (
-    <Link key={artist.id} to={`/${artist.id}`}>
+    <Link key={artist.id} to={`/releases/${artist.id}`}>
       <li>
         <Artist {...artist} />
       </li>
@@ -32,7 +32,7 @@ Artists.propTypes = {
     birth: PropTypes.string,
     death: PropTypes.string,
   })).isRequired,
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool
 };
 
 export default Artists;

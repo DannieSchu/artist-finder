@@ -10,7 +10,7 @@ exports[`Artists matches a snapshot 1`] = `
   <ul>
     <Link
       key="gh8932hg3gee"
-      to="/gh8932hg3gee"
+      to="/releases/gh8932hg3gee"
     >
       <li>
         <Artist
@@ -24,7 +24,7 @@ exports[`Artists matches a snapshot 1`] = `
     </Link>
     <Link
       key="6943w0utw0ghjvdr"
-      to="/6943w0utw0ghjvdr"
+      to="/releases/6943w0utw0ghjvdr"
     >
       <li>
         <Artist
@@ -38,7 +38,7 @@ exports[`Artists matches a snapshot 1`] = `
     </Link>
     <Link
       key="t430tu340grjid"
-      to="/t430tu340grjid"
+      to="/releases/t430tu340grjid"
     >
       <li>
         <Artist
