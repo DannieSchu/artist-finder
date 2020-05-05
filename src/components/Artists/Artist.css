@@ -1,0 +1,20 @@
+.Artist {
+  width: 100%;
+
+  th {
+    color: rgb(160, 231, 243);
+    background-color: rgb(22, 53, 88);
+    border-radius: 50% 20% / 10% 40%;
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 3rem;
+  }
+
+  td {
+    color: rgb(22, 53, 88);
+    text-decoration: none;
+    text-align: center;
+    width: 3rem;
+  } 
+}
