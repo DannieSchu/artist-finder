@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Artist from './Artist.jsx';
 
 const Artists = ({ artists }) => {
@@ -23,8 +23,9 @@ Artists.propTypes = {
   artists: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    origin: PropTypes.string.isRequired,
-    birth: PropTypes.string.isRequired
+    origin: PropTypes.string,
+    birth: PropTypes.string,
+    death: PropTypes.string
   })).isRequired
 };
 

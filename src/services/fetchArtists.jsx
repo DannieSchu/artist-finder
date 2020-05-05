@@ -4,7 +4,9 @@ export const fetchArtists = query => {
     .then(json => json.artists.map(artist => ({
       id: artist.id,
       name: artist.name,
-      origin: artist.area.name,
-      birth: artist.life-span.birth,
-    })));
+      origin: artist?.area?.name,
+      birth: artist['life-span'].begin,
+      died: artist['life-span'].end,
+    })))
+    .catch(err => console.log(err));
 };
