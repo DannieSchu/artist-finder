@@ -1,38 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Artist.css';
+import styles from '../Artists/Artist.jsx';
 
-const Artist = ({ name, origin, birth, death }) => {
+const Release = ({ title, date, url = 'music-icon.svg' }) => {
   return (
     <table className={styles.Artist}>
       <tr>
-        <th>Artist</th>
-        <td>{name}</td>
+        <th>Release</th>
+        <td>{title}</td>
       </tr>
       <tr>
-        {origin && <td>{origin}</td>}
-        {origin && <th>Origin</th>}
+        {date && <td>{date}</td>}
+        {date && <th>Date</th>}
       </tr>
-      <tr>
-        {birth && <th>DOB</th>}
-        {birth && <td>{birth.slice(0, 4)}</td>}
-      </tr>
-      <tr>
-        {death && <td>{death.slice(0, 4)}</td>}
-        {death && <th>Death</th>}
-      </tr>
+      <image src={url} alt={url ? name : 'Default image'} />
     </table>
   );
 };
 
-Artist.propTypes = {
-  name: PropTypes.string.isRequired,
-  origin: PropTypes.string,
-  birth: PropTypes.string,
-  death: PropTypes.string
+Release.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string,
+  url: PropTypes.string
 };
 
-export default Artist;
+export default Release;
 
 {/* <>
 <tr>

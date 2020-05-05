@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Controls from '../../components/Controls/Controls.jsx';
 import { fetchArtists } from '../../services/fetchArtists.jsx';
 import Artists from '../../components/Artists/Artists.jsx';
 import Header from '../../components/Header/Header.jsx';
@@ -19,7 +18,6 @@ const ArtistFinder = () => {
     setLoading(true);
     fetchArtists(artistSearch)
       .then(res => setArtists(res))
-      .then(result => console.log(result))
       .then(() => setLoading(false));
   };
 

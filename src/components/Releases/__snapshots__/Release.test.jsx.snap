@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Release matches a snapshot 1`] = `
+<table>
+  <tr>
+    <th>
+      Release
+    </th>
+    <td>
+      Wonderful Town
+    </td>
+  </tr>
+  <tr>
+    <td>
+      1953
+    </td>
+    <th>
+      Date
+    </th>
+  </tr>
+  <image
+    alt=""
+    src="music-icon.svg"
+  />
+</table>
+`;

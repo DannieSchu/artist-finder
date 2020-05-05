@@ -2,12 +2,21 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
+  <Release
+    date="1953"
+    title="Wonderful Town"
+  />
   <BrowserRouter>
     <Switch>
       <Route
         component={[Function]}
         exact={true}
         path="/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/releases/:id"
       />
     </Switch>
   </BrowserRouter>
