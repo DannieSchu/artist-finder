@@ -11,9 +11,6 @@ import Release from '../Releases/Release.jsx';
 export default function App() {
   return (
     <>
-      <Release 
-        title="Wonderful Town"
-        date="1953" />
       <Router>
         <Switch>
           <Route exact path ='/' component={ArtistFinder} />

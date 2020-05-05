@@ -2,10 +2,6 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <Release
-    date="1953"
-    title="Wonderful Town"
-  />
   <BrowserRouter>
     <Switch>
       <Route

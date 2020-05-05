@@ -8,12 +8,11 @@ exports[`Artists matches a snapshot 1`] = `
     Artists
   </h2>
   <ul>
-    <li
+    <Link
       key="gh8932hg3gee"
+      to="/gh8932hg3gee"
     >
-      <Link
-        to="/gh8932hg3gee"
-      >
+      <li>
         <Artist
           birth="1934-09-21"
           death="1934-09-21"
@@ -21,14 +20,13 @@ exports[`Artists matches a snapshot 1`] = `
           name="Leonard Cohen"
           origin="Canada"
         />
-      </Link>
-    </li>
-    <li
+      </li>
+    </Link>
+    <Link
       key="6943w0utw0ghjvdr"
+      to="/6943w0utw0ghjvdr"
     >
-      <Link
-        to="/6943w0utw0ghjvdr"
-      >
+      <li>
         <Artist
           birth="1934-09-21"
           death="1934-09-21"
@@ -36,14 +34,13 @@ exports[`Artists matches a snapshot 1`] = `
           name="Leonard Cohen"
           origin="Canada"
         />
-      </Link>
-    </li>
-    <li
+      </li>
+    </Link>
+    <Link
       key="t430tu340grjid"
+      to="/t430tu340grjid"
     >
-      <Link
-        to="/t430tu340grjid"
-      >
+      <li>
         <Artist
           birth="1934-09-21"
           death="1934-09-21"
@@ -51,8 +48,8 @@ exports[`Artists matches a snapshot 1`] = `
           name="Leonard Cohen"
           origin="Canada"
         />
-      </Link>
-    </li>
+      </li>
+    </Link>
   </ul>
 </section>
 `;

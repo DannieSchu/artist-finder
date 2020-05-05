@@ -4,17 +4,18 @@ import PropTypes from 'prop-types';
 import Artist from './Artist.jsx';
 import styles from './Artists.css';
 
-const Artists = ({ artists }) => {
+const Artists = ({ artists, loading }) => {
   const artistElements = artists.map(artist => (
-    <li key={artist.id}>
-      <Link to={`/${artist.id}`}>
+    <Link key={artist.id} to={`/${artist.id}`}>
+      <li>
         <Artist {...artist} />
-      </Link>
-    </li>
+      </li>
+    </Link>
   ));
 
   return (
     <section className={styles.Artists}>
+      {loading && <h2>Loading...</h2>}
       <h2>Artists</h2>
       <ul>
         {artistElements}
@@ -29,8 +30,9 @@ Artists.propTypes = {
     name: PropTypes.string.isRequired,
     origin: PropTypes.string,
     birth: PropTypes.string,
-    death: PropTypes.string
-  })).isRequired
+    death: PropTypes.string,
+  })).isRequired,
+  loading: PropTypes.bool.isRequired
 };
 
 export default Artists;
