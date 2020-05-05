@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Artist.css';
+import styles from '../item.css';
 
 const Artist = ({ name, origin, birth, death }) => (
-  <table className={styles.Artist}>
+  <section className={styles.Item}>
     <tr>
       <th>Artist</th>
       <td>{name}</td>
@@ -20,7 +20,7 @@ const Artist = ({ name, origin, birth, death }) => (
       {death && <td>{death.slice(0, 4)}</td>}
       {death && <th>Death</th>}
     </tr>
-  </table>
+  </section>
 );
 
 Artist.propTypes = {

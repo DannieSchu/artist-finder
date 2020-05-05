@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Artist matches a snapshot 1`] = `
-<table
-  className="Artist"
+<section
+  className="Item"
 >
   <tr>
     <th>
@@ -36,5 +36,5 @@ exports[`Artist matches a snapshot 1`] = `
       Death
     </th>
   </tr>
-</table>
+</section>
 `;

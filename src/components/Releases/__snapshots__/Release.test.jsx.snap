@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Release matches a snapshot 1`] = `
-<table>
+<section
+  className="Item"
+>
   <tr>
     <th>
       Release
@@ -18,9 +20,9 @@ exports[`Release matches a snapshot 1`] = `
       Date
     </th>
   </tr>
-  <image
+  <img
     alt=""
     src="/music-icon.svg"
   />
-</table>
+</section>
 `;

@@ -1,6 +1,14 @@
-.Artist {
+.Item {
   width: 100%;
   padding: 1rem;
+
+  img {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    border: 0.5rem solid rgb(22, 53, 88);
+    border-radius: 5px;
+  }
   
   th {
     color: rgb(160, 231, 243);

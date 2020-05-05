@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../Artists/Artist.jsx';
+import styles from '../item.css';
 
-const Release = ({ title, date, url = '/music-icon.svg' }) => (
-  <table className={styles.Artist}>
+const Release = ({ title, date, url }) => (
+  <section className={styles.Item}>
     <tr>
       <th>Release</th>
       <td>{title}</td>
@@ -12,8 +12,8 @@ const Release = ({ title, date, url = '/music-icon.svg' }) => (
       {date && <td>{date}</td>}
       {date && <th>Date</th>}
     </tr>
-    <image src={url} alt={url ? name : 'Default image'} />
-  </table>
+    <img src={url} alt={url ? name : 'Default image'} />
+  </section>
 );
 
 Release.propTypes = {
