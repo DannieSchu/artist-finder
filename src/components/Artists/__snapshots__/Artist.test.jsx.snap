@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artist matches a snapshot 1`] = `
+<Fragment>
+  <h3>
+    Artist: 
+    Leonard Cohen
+  </h3>
+  <p>
+    Origin: 
+    Canada
+  </p>
+  <p>
+    Born: 
+    1934
+  </p>
+</Fragment>
+`;
