@@ -1,27 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Release from './Release.jsx';
-import styles from '../Artists/Artists.css';
+import withList from '../../utils/withList.jsx';
 
-const Releases = ({ releases }) => {
-  const releaseElements = releases.map(release => (
-    <li key={release.id}>
-      <Link to={`/${release.id}`}>
-        <Release {...release} />
-      </Link>
-    </li>
-  ));
-
-  return (
-    <section className={styles.Releases}>
-      <h2>Releases</h2>
-      <ul>
-        {releaseElements}
-      </ul>
-    </section>
-  );
-};
+const Releases = withList(Release, 'releases');
 
 Releases.propTypes = {
   releases: PropTypes.arrayOf(PropTypes.shape({
