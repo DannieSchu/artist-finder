@@ -8,7 +8,8 @@ describe('Artist', () => {
       <Artist
         name="Leonard Cohen"
         origin="Canada"
-        birth="1934-09-21" />
+        birth="1934-09-21"
+        death="1934-09-21" />
     );
     expect(wrapper).toMatchSnapshot();
   });

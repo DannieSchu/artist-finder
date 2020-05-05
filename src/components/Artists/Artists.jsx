@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Artist from './Artist.jsx';
+import styles from './Artists.css';
 
 const Artists = ({ artists }) => {
   const artistElements = artists.map(artist => (
@@ -13,9 +14,12 @@ const Artists = ({ artists }) => {
   ));
 
   return (
-    <ul>
-      {artistElements}
-    </ul>
+    <section className={styles.Artists}>
+      <h1>Artists</h1>
+      <ul>
+        {artistElements}
+      </ul>
+    </section>
   );
 };
 

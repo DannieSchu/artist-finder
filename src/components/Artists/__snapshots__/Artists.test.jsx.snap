@@ -1,48 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Artists matches a snapshot 1`] = `
-<ul>
-  <li
-    key="gh8932hg3gee"
-  >
-    <Link
-      to="/gh8932hg3gee"
+<section
+  className="Artists"
+>
+  <h1>
+    Artists
+  </h1>
+  <ul>
+    <li
+      key="gh8932hg3gee"
     >
-      <Artist
-        birth="1934-09-21"
-        id="gh8932hg3gee"
-        name="Leonard Cohen"
-        origin="Canada"
-      />
-    </Link>
-  </li>
-  <li
-    key="6943w0utw0ghjvdr"
-  >
-    <Link
-      to="/6943w0utw0ghjvdr"
+      <Link
+        to="/gh8932hg3gee"
+      >
+        <Artist
+          birth="1934-09-21"
+          death="1934-09-21"
+          id="gh8932hg3gee"
+          name="Leonard Cohen"
+          origin="Canada"
+        />
+      </Link>
+    </li>
+    <li
+      key="6943w0utw0ghjvdr"
     >
-      <Artist
-        birth="1934-09-21"
-        id="6943w0utw0ghjvdr"
-        name="Leonard Cohen"
-        origin="Canada"
-      />
-    </Link>
-  </li>
-  <li
-    key="t430tu340grjid"
-  >
-    <Link
-      to="/t430tu340grjid"
+      <Link
+        to="/6943w0utw0ghjvdr"
+      >
+        <Artist
+          birth="1934-09-21"
+          death="1934-09-21"
+          id="6943w0utw0ghjvdr"
+          name="Leonard Cohen"
+          origin="Canada"
+        />
+      </Link>
+    </li>
+    <li
+      key="t430tu340grjid"
     >
-      <Artist
-        birth="1934-09-21"
-        id="t430tu340grjid"
-        name="Leonard Cohen"
-        origin="Canada"
-      />
-    </Link>
-  </li>
-</ul>
+      <Link
+        to="/t430tu340grjid"
+      >
+        <Artist
+          birth="1934-09-21"
+          death="1934-09-21"
+          id="t430tu340grjid"
+          name="Leonard Cohen"
+          origin="Canada"
+        />
+      </Link>
+    </li>
+  </ul>
+</section>
 `;

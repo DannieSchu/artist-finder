@@ -8,18 +8,23 @@ describe('Artists', () => {
       id: 'gh8932hg3gee',
       name: 'Leonard Cohen',
       origin: 'Canada',
-      birth: '1934-09-21' },
+      birth: '1934-09-21',
+      death: '1934-09-21',
+    },
     {
       id: '6943w0utw0ghjvdr',
       name: 'Leonard Cohen',
       origin: 'Canada',
-      birth: '1934-09-21' },
+      birth: '1934-09-21',
+      death: '1934-09-21' 
+    },
     {
       id: 't430tu340grjid',
       name: 'Leonard Cohen',
       origin: 'Canada',
-      birth: '1934-09-21' },
-    ];
+      birth: '1934-09-21',
+      death: '1934-09-21' 
+    }];
     
     const wrapper = shallow(
       <Artists artists={artists} />

@@ -2,30 +2,14 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <ArtistFinder />
-  <Artists
-    artists={
-      Array [
-        Object {
-          "birth": "1934-09-21",
-          "id": "gh8932hg3gee",
-          "name": "Leonard Cohen",
-          "origin": "Canada",
-        },
-        Object {
-          "birth": "1934-09-21",
-          "id": "6943w0utw0ghjvdr",
-          "name": "Leonard Cohen",
-          "origin": "Canada",
-        },
-        Object {
-          "birth": "1934-09-21",
-          "id": "t430tu340grjid",
-          "name": "Leonard Cohen",
-          "origin": "Canada",
-        },
-      ]
-    }
-  />
+  <BrowserRouter>
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+    </Switch>
+  </BrowserRouter>
 </Fragment>
 `;
