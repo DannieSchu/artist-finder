@@ -4,9 +4,9 @@ exports[`Artists matches a snapshot 1`] = `
 <section
   className="Artists"
 >
-  <h1>
+  <h2>
     Artists
-  </h1>
+  </h2>
   <ul>
     <li
       key="gh8932hg3gee"

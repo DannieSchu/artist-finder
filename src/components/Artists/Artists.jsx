@@ -15,7 +15,7 @@ const Artists = ({ artists }) => {
 
   return (
     <section className={styles.Artists}>
-      <h1>Artists</h1>
+      <h2>Artists</h2>
       <ul>
         {artistElements}
       </ul>
