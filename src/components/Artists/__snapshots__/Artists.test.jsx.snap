@@ -2,17 +2,18 @@
 
 exports[`Artists matches a snapshot 1`] = `
 <section
-  className="Artists"
+  className="List"
 >
   <h2>
     Artists
   </h2>
   <ul>
-    <Link
+    <li
       key="gh8932hg3gee"
-      to="/releases/gh8932hg3gee"
     >
-      <li>
+      <Link
+        to="/releases/gh8932hg3gee"
+      >
         <Artist
           birth="1934-09-21"
           death="1934-09-21"
@@ -20,13 +21,14 @@ exports[`Artists matches a snapshot 1`] = `
           name="Leonard Cohen"
           origin="Canada"
         />
-      </li>
-    </Link>
-    <Link
+      </Link>
+    </li>
+    <li
       key="6943w0utw0ghjvdr"
-      to="/releases/6943w0utw0ghjvdr"
     >
-      <li>
+      <Link
+        to="/releases/6943w0utw0ghjvdr"
+      >
         <Artist
           birth="1934-09-21"
           death="1934-09-21"
@@ -34,13 +36,14 @@ exports[`Artists matches a snapshot 1`] = `
           name="Leonard Cohen"
           origin="Canada"
         />
-      </li>
-    </Link>
-    <Link
+      </Link>
+    </li>
+    <li
       key="t430tu340grjid"
-      to="/releases/t430tu340grjid"
     >
-      <li>
+      <Link
+        to="/releases/t430tu340grjid"
+      >
         <Artist
           birth="1934-09-21"
           death="1934-09-21"
@@ -48,8 +51,8 @@ exports[`Artists matches a snapshot 1`] = `
           name="Leonard Cohen"
           origin="Canada"
         />
-      </li>
-    </Link>
+      </Link>
+    </li>
   </ul>
 </section>
 `;

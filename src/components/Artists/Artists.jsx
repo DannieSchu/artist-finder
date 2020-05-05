@@ -1,28 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Artist from './Artist.jsx';
-import styles from './Artists.css';
+import withList from '../../utils/withList.jsx';
 
-const Artists = ({ artists, loading }) => {
-  const artistElements = artists.map(artist => (
-    <Link key={artist.id} to={`/releases/${artist.id}`}>
-      <li>
-        <Artist {...artist} />
-      </li>
-    </Link>
-  ));
 
-  return (
-    <section className={styles.Artists}>
-      {loading && <h2>Loading...</h2>}
-      <h2>Artists</h2>
-      <ul>
-        {artistElements}
-      </ul>
-    </section>
-  );
-};
+const Artists = withList(Artist, 'artists');
 
 Artists.propTypes = {
   artists: PropTypes.arrayOf(PropTypes.shape({
