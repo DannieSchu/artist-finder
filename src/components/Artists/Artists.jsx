@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import Artist from './Artist.jsx';
 import withList from '../../utils/withList.jsx';
 
-
 const Artists = withList(Artist, 'artists');
 
 Artists.propTypes = {
