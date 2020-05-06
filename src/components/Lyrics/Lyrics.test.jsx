@@ -8,7 +8,9 @@ describe('Lyrics', () => {
     
     const wrapper = shallow(
       <Lyrics
-        lyrics={lyrics} />
+        lyrics={lyrics}
+        artist="The Smiths"
+        recording="Please, Please, Please Let Me...Go To Bed" />
     );
     expect(wrapper).toMatchSnapshot();
   });
