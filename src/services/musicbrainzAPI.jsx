@@ -18,6 +18,12 @@ export const fetchArtist = artistId => {
     .then(json => json.name);
 };
 
+export const fetchRelease = releaseId => {
+  return fetch(`https://musicbrainz.org/ws/2/release/${releaseId}?&fmt=json`)
+    .then(response => response.json())
+    .then(json => json.title);
+};
+
 export const fetchReleases = artistId => {
   return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json`)
     .then(response => response.json())
@@ -26,5 +32,14 @@ export const fetchReleases = artistId => {
       url: release['cover-art-archive'].front ? `http://coverartarchive.org/release/${release.id}/front` : placeholder,
       title: release.title,
       date: release.date
+    })));
+};
+
+export const fetchRecordings = releaseId => {
+  return fetch(`http://musicbrainz.org/ws/2/recording?release=${releaseId}&fmt=json`)
+    .then(response => response.json())
+    .then(json => json.recordings.map(recording => ({
+      id: recording.id,
+      title: recording.title
     })));
 };
