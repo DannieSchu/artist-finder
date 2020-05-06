@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Releases matches a snapshot 1`] = `
+<section
+  className="List"
+>
+  <h2>
+    Results for '
+    '
+  </h2>
+  <ul>
+    <li
+      key="fneowigbw0"
+    >
+      <Link
+        to="/release/fneowigbw0"
+      >
+        <Release
+          id="fneowigbw0"
+          title="some title"
+        />
+      </Link>
+    </li>
+    <li
+      key="fneowigbw0"
+    >
+      <Link
+        to="/release/fneowigbw0"
+      >
+        <Release
+          id="fneowigbw0"
+          title="another title"
+        />
+      </Link>
+    </li>
+    <li
+      key="fneowigbw0"
+    >
+      <Link
+        to="/release/fneowigbw0"
+      >
+        <Release
+          id="fneowigbw0"
+          title="a third title"
+        />
+      </Link>
+    </li>
+  </ul>
+</section>
+`;
