@@ -1,3 +1,5 @@
+import placeholder from '../assets/music-icon.svg';
+
 export const fetchArtists = query => {
   return fetch(`http://musicbrainz.org/ws/2/artist?query=${query}&fmt=json&limit=25`)
     .then(response => response.json())
@@ -21,7 +23,7 @@ export const fetchReleases = artistId => {
     .then(response => response.json())
     .then(json => json.releases.map(release => ({
       id: release.id,
-      url: release['cover-art-archive'].front ? `http://coverartarchive.org/release/${release.id}/front` : '../../assets/music-icon.svg',
+      url: release['cover-art-archive'].front ? `http://coverartarchive.org/release/${release.id}/front` : placeholder,
       title: release.title,
       date: release.date
     })));

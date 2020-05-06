@@ -5,7 +5,8 @@ exports[`Artists matches a snapshot 1`] = `
   className="List"
 >
   <h2>
-    Artists
+    Results for '
+    '
   </h2>
   <ul>
     <li
