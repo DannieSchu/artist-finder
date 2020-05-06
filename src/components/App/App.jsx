@@ -6,13 +6,13 @@ import {
 } from 'react-router-dom';
 import ArtistFinder from '../../containers/ArtistFinder/ArtistFinder.jsx';
 import ReleasesContainer from '../../containers/ReleasesContainer/ReleasesContainer.jsx';
-import Recording from '../Recordings/Recording.jsx';
+import RecordingsContainer from '../../containers/RecordingsContainer/RecordingsContainer.jsx';
 
 export default function App() {
   return (
     <Router>
-      <Recording title="wonderful world"/>
       <Switch>
+        <Route path ='/release/:releaseId' component={RecordingsContainer} />
         <Route path ='/artist/:artistId' component={ReleasesContainer} />
         <Route exact path ='/' component={ArtistFinder} />
       </Switch>

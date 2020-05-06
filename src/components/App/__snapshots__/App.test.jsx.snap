@@ -2,10 +2,11 @@
 
 exports[`App component renders App 1`] = `
 <BrowserRouter>
-  <Recording
-    title="wonderful world"
-  />
   <Switch>
+    <Route
+      component={[Function]}
+      path="/release/:releaseId"
+    />
     <Route
       component={[Function]}
       path="/artist/:artistId"

@@ -13,7 +13,7 @@ exports[`Artists matches a snapshot 1`] = `
       key="gh8932hg3gee"
     >
       <Link
-        to="/releases/gh8932hg3gee"
+        to="/artist/gh8932hg3gee"
       >
         <Artist
           birth="1934-09-21"
@@ -28,7 +28,7 @@ exports[`Artists matches a snapshot 1`] = `
       key="6943w0utw0ghjvdr"
     >
       <Link
-        to="/releases/6943w0utw0ghjvdr"
+        to="/artist/6943w0utw0ghjvdr"
       >
         <Artist
           birth="1934-09-21"
@@ -43,7 +43,7 @@ exports[`Artists matches a snapshot 1`] = `
       key="t430tu340grjid"
     >
       <Link
-        to="/releases/t430tu340grjid"
+        to="/artist/t430tu340grjid"
       >
         <Artist
           birth="1934-09-21"
