@@ -1,29 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
 import Releases from '../../components/Releases/Releases.jsx';
-import { fetchReleases } from '../../services/musicbrainzAPI.jsx';
+import { fetchArtist, fetchReleases } from '../../services/musicbrainzAPI.jsx';
 
-const ReleasesContainer = ({ match }) => {
+const ReleasesContainer = () => {
   const [releases, setReleases] = useState([]);
+  const [selectedArtist, setArtist] = useState('');
   const [loading, setLoading] = useState(false);
+  const { artist } = useParams();
 
   useEffect(() => {
-    fetchReleases(match.params.id)
+    fetchArtist(artist)
+      .then(fetchedArtist => setArtist(fetchedArtist));
+
+    fetchReleases(artist)
       .then(fetchedReleases => setReleases(fetchedReleases))
       .then(() => setLoading(false));
   }, []);
 
   return (
-    <Releases releases={releases} loading={loading} />
+    <Releases releases={releases} heading={selectedArtist} loading={loading} />
   );
-};
-
-ReleasesContainer.propTypes = {
-  match: PropTypes.shape({
-    params: PropTypes.shape({
-      id: PropTypes.string.isRequired
-    }).isRequired
-  }).isRequired
 };
 
 export default ReleasesContainer;

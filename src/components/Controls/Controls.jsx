@@ -15,8 +15,8 @@ const Controls = ({ onChange, onSubmit, value, placeholder, buttonText = 'Submit
 Controls.propTypes = {
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
+  value: PropTypes.string,
   buttonText: PropTypes.string
 };
 

@@ -10,6 +10,12 @@ export const fetchArtists = query => {
     })));
 };
 
+export const fetchArtist = artistId => {
+  return fetch(`https://musicbrainz.org/ws/2/artist/${artistId}?&fmt=json`)
+    .then(response => response.json())
+    .then(json => json.name);
+};
+
 export const fetchReleases = artistId => {
   return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json`)
     .then(response => response.json())

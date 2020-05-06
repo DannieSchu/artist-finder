@@ -30,7 +30,7 @@ const ArtistFinder = () => {
         buttonText="Go!"
       />
       {artists.length === 0 && <Home />}
-      {artists.length !== 0 && <Artists artists={artists} loading={loading} />}
+      {artists.length !== 0 && <Artists artists={artists} heading={artistSearch} loading={loading} />}
     </>
   );
 };

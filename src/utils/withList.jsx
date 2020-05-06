@@ -15,7 +15,7 @@ const withList = (ListItemComponent, propName = 'list') => {
     return (
       <section className={styles.List}>
         {props.loading && <h2>Loading...</h2>}
-        <h2>{ListItemComponent.name + 's'}</h2>
+        <h2>Results for '{props.heading}'</h2>
         <ul>
           {listItems}
         </ul>
