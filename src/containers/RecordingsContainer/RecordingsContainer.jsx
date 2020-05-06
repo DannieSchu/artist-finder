@@ -10,6 +10,7 @@ const RecordingsContainer = ({ match }) => {
   const { releaseId } = match.params;
 
   useEffect(() => {
+    setLoading(true);
     fetchRelease(releaseId)
       .then(fetchedRelease => setRelease(fetchedRelease));
 

@@ -10,6 +10,7 @@ const ReleasesContainer = ({ match }) => {
   const { artistId } = match.params;
 
   useEffect(() => {
+    setLoading(true);
     fetchArtist(artistId)
       .then(fetchedArtist => setArtist(fetchedArtist));
 
