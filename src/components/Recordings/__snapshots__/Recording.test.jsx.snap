@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recording matches a snapshot 1`] = `
+<section
+  className="Item"
+>
+  <h3>
+    Wonderful World
+  </h3>
+</section>
+`;
