@@ -43,3 +43,15 @@ export const fetchRecordings = releaseId => {
       title: recording.title
     })));
 };
+
+export const fetchRecording = recordingId => {
+  return fetch(`https://musicbrainz.org/ws/2/recording/${recordingId}?&fmt=json`)
+    .then(response => response.json())
+    .then(json => json.title);
+};
+
+export const fetchArtistByRecording = recordingId => {
+  return fetch(`http://musicbrainz.org/ws/2/artist?recording=${recordingId}&fmt=json`)
+    .then(response => response.json())
+    .then(json => json.artists[0].name);
+};
