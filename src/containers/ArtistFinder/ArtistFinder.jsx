@@ -23,7 +23,8 @@ const ArtistFinder = () => {
 
   return (
     <>
-      <Header onChange={handleChange} 
+      <Header 
+        onChange={handleChange} 
         onSubmit={handleSubmit} 
         value={artistSearch} 
         placeholder="Find artist" 

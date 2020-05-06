@@ -11,7 +11,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path ='/releases/:artist' component={ReleasesContainer} />
+        <Route path ='/release/:releaseId' component={ReleasesContainer} />
+        <Route path ='/artist/:artistId' component={ReleasesContainer} />
         <Route exact path ='/' component={ArtistFinder} />
       </Switch>
     </Router>

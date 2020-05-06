@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import styles from '../components/List.css';
 
 const withList = (ListItemComponent, propName = 'list') => {
+  const path = ListItemComponent.name.toLowerCase();
+
   function WithListHOC(props) {
     const listItems = props[propName].map(item => (
       <li key={item.id}>
-        <Link to={`/releases/${item.id}`}>
+        <Link to={`/${path}/${item.id}`}>
           <ListItemComponent {...item} />
         </Link>
       </li>
