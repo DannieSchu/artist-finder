@@ -1,0 +1,21 @@
+.Paging {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+
+  button {
+    margin: .5rem;
+    text-align: center;
+  }
+  
+  button:active {
+    background-color: rgb(160, 231, 243);;
+    box-shadow: none;
+  }
+  
+  button:disabled {
+    background-color: rgb(50, 86, 128);
+    cursor: default
+  }
+}
+
