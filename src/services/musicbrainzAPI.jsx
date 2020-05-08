@@ -1,15 +1,18 @@
 import placeholder from '../assets/music-icon.svg';
 
-export const fetchArtists = query => {
-  return fetch(`http://musicbrainz.org/ws/2/artist?query=${query}&fmt=json&limit=25`)
+export const fetchArtists = (query, page) => {
+  return fetch(`http://musicbrainz.org/ws/2/artist?query=${query}&fmt=json&limit=20&offset=${(page - 1) * 20}`)
     .then(response => response.json())
-    .then(json => json.artists.map(artist => ({
-      id: artist.id,
-      name: artist.name,
-      origin: artist?.area?.name,
-      birth: artist['life-span'].begin,
-      died: artist['life-span'].end,
-    })));
+    .then(json => ({
+      totalPages: Math.ceil(json.count / 20),
+      artists: json.artists.map(artist => ({
+        id: artist.id,
+        name: artist.name,
+        origin: artist?.area?.name,
+        birth: artist['life-span'].begin,
+        died: artist['life-span'].end,
+      }))
+    }));
 };
 
 export const fetchArtist = artistId => {

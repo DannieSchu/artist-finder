@@ -2,11 +2,6 @@
 
 exports[`App component renders App 1`] = `
 <BrowserRouter>
-  <Paging
-    incrementPage={[Function]}
-    page={1}
-    totalPages={8}
-  />
   <Switch>
     <Route
       component={[Function]}
