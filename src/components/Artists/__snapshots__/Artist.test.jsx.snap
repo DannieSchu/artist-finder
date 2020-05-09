@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artist matches a snapshot 1`] = `
+<section
+  className="Item"
+>
+  <tr>
+    <th>
+      Artist
+    </th>
+    <td>
+      Leonard Cohen
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Canada
+    </td>
+    <th>
+      Origin
+    </th>
+  </tr>
+  <tr>
+    <th>
+      DOB
+    </th>
+    <td>
+      1934
+    </td>
+  </tr>
+  <tr>
+    <td>
+      1934
+    </td>
+    <th>
+      Death
+    </th>
+  </tr>
+</section>
+`;

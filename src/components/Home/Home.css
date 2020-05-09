@@ -1,0 +1,17 @@
+.Home {
+  background-color: rgb(160, 231, 243);
+  color: rgb(22, 53, 88);
+  border-radius: 50% 20% / 10% 40%;
+  padding: 1rem 1rem;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  padding: 3.5rem 3rem;
+  bottom: 20vh;
+  right: 30vw;
+  min-width: 28rem;
+  width: 43%;
+  height: 53%;
+  font-size: 2rem;
+  font-weight: bolder;
+}
