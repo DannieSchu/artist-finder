@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../detail.css';
+import styles from '../../global-styles/detail.css';
 
 const Lyrics = ({ lyrics = 'No lyrics available', recording, artist, loading }) => (
-  <section className={styles.Detail}>
+  <section className={styles.detail}>
     <h2>Lyrics for '{recording}'</h2>
     <div>
       <h3>{artist}</h3>

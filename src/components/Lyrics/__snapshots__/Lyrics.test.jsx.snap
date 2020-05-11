@@ -2,7 +2,7 @@
 
 exports[`Lyrics matches a snapshot 1`] = `
 <section
-  className="Detail"
+  className="detail"
 >
   <h2>
     Lyrics for '

@@ -2,7 +2,7 @@
 
 exports[`Release matches a snapshot 1`] = `
 <section
-  className="Item"
+  className="item"
 >
   <tr>
     <th>

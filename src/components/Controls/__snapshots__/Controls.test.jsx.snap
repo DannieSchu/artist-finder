@@ -10,7 +10,9 @@ exports[`Controls matches a snapshot 1`] = `
     type="text"
     value=""
   />
-  <button>
+  <button
+    className="button"
+  >
     Go!
   </button>
 </form>

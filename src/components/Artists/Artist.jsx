@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../item.css';
+import styles from '../../global-styles/item.css';
 
 const Artist = ({ name, origin, birth, death }) => (
-  <section className={styles.Item}>
+  <section className={styles.item}>
     <tr>
       <th>Artist</th>
       <td>{name}</td>

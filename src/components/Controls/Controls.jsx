@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import buttonStyle from '../../global-styles/button.css';
 
 const Controls = ({ onChange, onSubmit, value, placeholder, buttonText = 'Submit' }) => (
   <form onSubmit={onSubmit}>
@@ -8,7 +9,7 @@ const Controls = ({ onChange, onSubmit, value, placeholder, buttonText = 'Submit
       value={value}
       onChange={onChange}
       placeholder={placeholder} />
-    <button>{buttonText}</button>
+    <button className={buttonStyle.button}>{buttonText}</button>
   </form>
 );
 

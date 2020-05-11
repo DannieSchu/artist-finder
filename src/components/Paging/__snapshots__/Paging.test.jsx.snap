@@ -5,12 +5,14 @@ exports[`Paging component renders Paging 1`] = `
   className="Paging"
 >
   <button
+    className="button"
     disabled={true}
     onClick={[Function]}
   >
     &lt;
   </button>
   <button
+    className="button"
     disabled={false}
     onClick={[Function]}
   >
