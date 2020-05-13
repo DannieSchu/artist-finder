@@ -4,13 +4,15 @@ import Lyrics from './Lyrics.jsx';
 
 describe('Lyrics', () => {
   it('matches a snapshot', () => {
-    const lyrics = 'Good time for a change See, the luck I\'ve had Can make a good man Turn bad So please please please Let me, let me, let me Let me get what I want This time';
-    
+    const match = {
+      params: {
+        recordingId: '192e12e5-cf73-41e9-b4f1-7869760b66f4'
+      }
+    };
+
     const wrapper = shallow(
       <Lyrics
-        lyrics={lyrics}
-        artist="The Smiths"
-        recording="Please, Please, Please Let Me...Go To Bed" />
+        match={match} />
     );
     expect(wrapper).toMatchSnapshot();
   });
