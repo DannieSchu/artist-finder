@@ -5,8 +5,8 @@ import {
   Route
 } from 'react-router-dom';
 import ArtistFinder from '../Artists/ArtistFinder.jsx';
-import ReleasesContainer from '../../containers/ReleasesContainer/ReleasesContainer.jsx';
-import RecordingsContainer from '../../containers/RecordingsContainer/RecordingsContainer.jsx';
+import ReleasesContainer from '../Releases/ReleasesFinder.jsx';
+import RecordingsContainer from '../Recordings/Recordings.jsx';
 import LyricsContainer from '../../containers/LyricsContainer/LyricsContainer.jsx';
 
 export default function App() {
