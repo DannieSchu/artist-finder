@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import ArtistFinder from '../../containers/ArtistFinder/ArtistFinder.jsx';
+import ArtistFinder from '../Artists/ArtistFinder.jsx';
 import ReleasesContainer from '../../containers/ReleasesContainer/ReleasesContainer.jsx';
 import RecordingsContainer from '../../containers/RecordingsContainer/RecordingsContainer.jsx';
 import LyricsContainer from '../../containers/LyricsContainer/LyricsContainer.jsx';
