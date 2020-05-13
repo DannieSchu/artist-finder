@@ -8,7 +8,7 @@ import withPaging from '../../utils/withPaging.jsx';
 import withList from '../../utils/withList.jsx';
 
 const ArtistFinder = ({ page, setTotalPages }) => {
-  const { artists, loading, artistSearch, handleChange, handleSubmit } = useFindArtist({ page, setTotalPages });
+  const { artists, loading, artistSearch, handleChange, handleSubmit } = useFindArtist(page, setTotalPages);
   const Artists = withList(Artist, 'artists');
 
   return (

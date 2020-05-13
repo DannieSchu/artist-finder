@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetchArtists } from '../services/musicbrainzAPI.jsx';
 
-export const useFindArtist = ({ page, setTotalPages }) => {
+export const useFindArtist = (page, setTotalPages) => {
   const [artistSearch, setArtistSearch] = useState('');
   const [artists, setArtists] = useState([]);
   const [loading, setLoading] = useState(false);

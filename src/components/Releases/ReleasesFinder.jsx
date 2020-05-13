@@ -6,7 +6,8 @@ import withList from '../../utils/withList.jsx';
 import { useGetReleases } from '../../hooks/getReleases.jsx';
 
 const ReleasesFinder = ({ match, page, setTotalPages }) => {
-  const { releases, artist, loading } = useGetReleases(match, page, setTotalPages);
+  const { artistId } = match.params;
+  const { releases, artist, loading } = useGetReleases(artistId, page, setTotalPages);
   const Releases = withList(Release, 'releases');
 
   return (
