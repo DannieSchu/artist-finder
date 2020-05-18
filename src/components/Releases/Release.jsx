@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../item.css';
+import styles from '../../global-styles/item.css';
 
 const Release = ({ title, date, url }) => (
-  <section className={styles.Item}>
+  <section className={styles.item}>
     <tr>
       <th>Release</th>
       <td>{title}</td>

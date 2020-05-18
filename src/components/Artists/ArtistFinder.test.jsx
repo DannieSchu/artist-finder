@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Artists from './Artists.jsx';
+import ArtistFinder from './ArtistFinder.jsx';
 
-describe('Artists', () => {
+describe('ArtistFinder', () => {
   it('matches a snapshot', () => {
     const artists = [{
       id: 'gh8932hg3gee',
@@ -27,7 +27,7 @@ describe('Artists', () => {
     }];
     
     const wrapper = shallow(
-      <Artists artists={artists} />
+      <ArtistFinder artists={artists} />
     );
     expect(wrapper).toMatchSnapshot();
   });

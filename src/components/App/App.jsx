@@ -4,18 +4,18 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import ArtistFinder from '../../containers/ArtistFinder/ArtistFinder.jsx';
-import ReleasesContainer from '../../containers/ReleasesContainer/ReleasesContainer.jsx';
-import RecordingsContainer from '../../containers/RecordingsContainer/RecordingsContainer.jsx';
-import LyricsContainer from '../../containers/LyricsContainer/LyricsContainer.jsx';
+import ArtistFinder from '../Artists/ArtistFinder.jsx';
+import Lyrics from '../Lyrics/Lyrics.jsx';
+import RecordingsFinder from '../Recordings/RecordingsFinder.jsx';
+import ReleasesFinder from '../Releases/ReleasesFinder.jsx';
 
 export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path ='/recording/:recordingId' component={LyricsContainer} />
-        <Route path ='/release/:releaseId' component={RecordingsContainer} />
-        <Route path ='/artist/:artistId' component={ReleasesContainer} />
+        <Route path ='/recording/:recordingId' component={Lyrics} />
+        <Route path ='/release/:releaseId' component={RecordingsFinder} />
+        <Route path ='/artist/:artistId' component={ReleasesFinder} />
         <Route exact path ='/' component={ArtistFinder} />
       </Switch>
     </Router>

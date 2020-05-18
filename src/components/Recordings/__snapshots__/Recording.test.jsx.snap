@@ -2,7 +2,7 @@
 
 exports[`Recording matches a snapshot 1`] = `
 <section
-  className="Item"
+  className="item"
 >
   <h3>
     Wonderful World

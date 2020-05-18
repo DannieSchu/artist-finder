@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../components/List.css';
+import styles from '../global-styles/list.css';
 
 const withList = (ListItemComponent, propName = 'list') => {
   const path = ListItemComponent.name.toLowerCase();
@@ -15,7 +15,7 @@ const withList = (ListItemComponent, propName = 'list') => {
     ));
 
     return (
-      <section className={styles.List}>
+      <section className={styles.list}>
         {props.loading && <h2>Loading...</h2>}
         <h2>Results for '{props.heading}'</h2>
         <ul>
