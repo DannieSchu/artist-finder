@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import buttonStyle from '../../global-styles/button.css';
+import styles from './Controls.css';
 
 const Controls = ({ onChange, onSubmit, value, placeholder, buttonText = 'Submit' }) => (
-  <form onSubmit={onSubmit}>
+  <form className={styles.Controls} onSubmit={onSubmit}>
     <input
       type="text"
       value={value}

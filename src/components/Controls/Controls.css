@@ -1,0 +1,8 @@
+.Controls {
+  input {
+    border-radius: .5rem;
+    padding-left: 1rem;
+    width: 15rem;
+    height: 2rem;
+  }
+}
