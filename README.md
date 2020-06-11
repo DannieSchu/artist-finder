@@ -3,8 +3,7 @@
 ## Overview
 Search for a musical artist to view their catalogue of releases. Dive deeper to see each album's songs and the corresponding lyrics.
 
-## Author
-Dannie Schumaker
+**Author:** Dannie Schumaker
 
 ## Technologies
 React, Jest, Enzyme, PostCSS, REST APIs
@@ -13,10 +12,10 @@ React, Jest, Enzyme, PostCSS, REST APIs
 * **Artist info:** [Music Brainz](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2)
 * **Lyrics:** [lyrics.ovh](https://lyricsovh.docs.apiary.io/#reference/0/lyrics-of-a-song/search)
 
-Cover art sourced from [Cover Art Archive](http://coverartarchive.org)
+**Cover art** sourced from [Cover Art Archive](http://coverartarchive.org).
 
 ## Approach
-This app was built in React. The overall strategy was developed through extensive component diagrams. State is managed by custom hooks in function components. Higher order components were created to generate the multiple list and paging components (thereby dramatically reducing repeated code).
+The overall strategy for this React app was developed through extensive component diagrams and implemented incrementally in vertical slices. State is managed by custom hooks in function components. Higher order components were created to generate the multiple list and paging components (thereby dramatically reducing repeated code).
 
 ## Getting Started
 1. Clone and download GitHub repo
