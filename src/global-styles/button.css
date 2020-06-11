@@ -1,13 +1,19 @@
 .button {
-  background-color: rgb(247, 173, 104);
-  font-weight: bold;
-  font-size: 1rem;
-  color: rgb(22, 53, 88);
-  border-radius: 0.3rem;
-  border: none;
   height: 2rem;
   width: 4rem;
   margin-left: 3em;
+  
+  border-radius: 0.3rem;
+  border: none;
   letter-spacing: 0.02rem;
   cursor: pointer;
+  
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(22, 53, 88);
+  background-color: rgb(247, 173, 104);
+
+  &:hover {
+    background-color: rgb(160, 231, 243);
+  }
 }
